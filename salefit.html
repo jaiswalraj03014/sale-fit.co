@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We'll Be Back Soon</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #a3d1f9, #89a1ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background: #1f3a93;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            box-sizing: border-box;
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .logo img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto 20px;
+            transition: transform 0.3s ease;
+        }
+        .logo img:hover {
+            transform: rotate(360deg);
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 15px;
+            margin-top: 20px;
+            font-weight: 700;
+      
+            animation: slideIn 0.5s ease-out;
+        }
+        @keyframes slideIn {
+            0% { transform: translateY(-30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        p {
+            font-size: 1.1rem;
+            color: #f0f0f0;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            opacity: 0.8;
+        }
+        .illustration img {
+            max-width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto 30px;
+            animation: fadeInImage 1s ease-out;
+        }
+        @keyframes fadeInImage {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .footer {
+            font-size: 0.95rem;
+            color: #fff;
+            opacity: 0.8;
+            margin-top: 30px;
+        }
+        .footer p {
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/Users/aakashjaiswal/Desktop/salefit/salefit_full_nobg.png" alt="Logo">
+        </div>
+        <h1>We'll Be Back Soon!</h1>
+        <p>Our website is currently undergoing scheduled maintenance. We are working hard to bring everything back online. Thank you for your patience!</p>
+        <div class="illustration">
+            <img src="/Users/aakashjaiswal/Desktop/server.png" alt="Maintenance Illustration">
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 SaleFIT.co. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
